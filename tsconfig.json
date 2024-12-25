@@ -3,17 +3,42 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-     "@dtos/*": ["./src/dtos/*"],
-      "@assets/*": ["./assets/*"],
-      "@components/*": ["./src/components/*"],
-      "@screens/*": ["./src/screens/*"],
-      "@storage/*": ["./src/storage/*"],
-      "@libs/*": ["./src/lib/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@services/*": ["./src/services/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@contexts/*": ["./src/context/*"],
-      "@routes/*": ["./src/routes/*"],
+      "@/*": [
+        "./*"
+      ],
+      "@dtos/*": [
+        "./src/dtos/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@screens/*": [
+        "./src/screens/*"
+      ],
+      "@storage/*": [
+        "./src/storage/*"
+      ],
+      "@libs/*": [
+        "./src/lib/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@contexts/*": [
+        "./src/context/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
       "tailwind.config": [
         "./tailwind.config.js"
       ]
@@ -23,6 +48,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
   ]
 }
