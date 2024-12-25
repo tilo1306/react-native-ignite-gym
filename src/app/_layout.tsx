@@ -1,5 +1,8 @@
 import { Text } from 'react-native';
 
+import "@/global.css";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+
 export default function RootLayout() {
-  return <Text>oi</Text>;
+  return <GluestackUIProvider mode="light"><Text>oi</Text></GluestackUIProvider>;
 }
