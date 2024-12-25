@@ -3,7 +3,7 @@ import gluestackPlugin from '@gluestack-ui/nativewind-utils/tailwind-plugin';
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "media",
-  content: ["src/**/*.{tsx,jsx,ts,js}", "components/**/*.{tsx,jsx,ts,js}"],
+  content: ["src/**/*.{tsx,jsx,ts,js}"],
   presets: [require('nativewind/preset')],
   theme: {
     extend: {
@@ -149,6 +149,18 @@ module.exports = {
           800: 'rgb(var(--color-background-800)/<alpha-value>)',
           900: 'rgb(var(--color-background-900)/<alpha-value>)',
           950: 'rgb(var(--color-background-950)/<alpha-value>)',
+          green500: "#00B37E",
+          green600: "#16a34a",
+          green700: "#00875F",
+          gray100: "#E1E1E6",
+          gray200: "#C4C4CC",
+          gray300: "#7C7C8A",
+          gray400: "#323238",
+          gray500: "#29292E",
+          gray600: "#202024",
+          gray700: "#121214",
+          gray900: "#121214",
+          red500: "#F75A68",
           error: 'rgb(var(--color-background-error)/<alpha-value>)',
           warning: 'rgb(var(--color-background-warning)/<alpha-value>)',
           muted: 'rgb(var(--color-background-muted)/<alpha-value>)',
@@ -164,8 +176,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: undefined,
-        body: undefined,
+        heading: ['Roboto_700Bold'],
+        body: ['Roboto_400Regular'],
         mono: undefined,
         roboto: ['Roboto', 'sans-serif'],
       },
@@ -173,7 +185,15 @@ module.exports = {
         extrablack: '950',
       },
       fontSize: {
-        '2xs': '10px',
+        xs: 12,
+        sm: 14,
+        md: 16,
+        lg: 18,
+        xl: 20,
+      },
+      space: {
+        14: 56,
+        33: 148
       },
       boxShadow: {
         'hard-1': '-2px 2px 8px 0px rgba(38, 38, 38, 0.20)',
