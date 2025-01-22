@@ -10,6 +10,7 @@ import {
 import React from 'react';
 import { Center } from '../components/ui/center';
 import { Loading } from '../components/loading';
+import SignIn from './singIn';
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -26,7 +27,7 @@ export default function RootLayout() {
       />
       {fontsLoaded ? (
         <Center className="flex-1 bg-background-gray700">
-          <Text>Douglas</Text>
+          <SignIn />
         </Center>
       ) : (
         <Loading />
